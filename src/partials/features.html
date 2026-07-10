@@ -2,127 +2,114 @@
   <div class="container feat_wrapper">
     <h2 class="feat_section-title">Features</h2>
 
-    <!-- <div class="feat_slider-viewport">
-      <div class="feat_slider-track" data-hiw-track>
-        <figure class="feat_card" data-hiw-slide>
+    <div class="feat_slider-viewport">
+      <div class="feat_slider-track">
+        <!-- Карточка 1 -->
+        <figure class="feat_card">
           <div class="feat_card-icon-wrap">
-            <svg class="feat_card-icon">
-              <use href="/sprite.svg#icon-feature1"></use>
-            </svg>
+            <picture>
+              <source
+                srcset="
+                  /img/features/feature1.png    1x,
+                  /img/features/feature1@2x.png 2x
+                "
+              />
+              <img
+                src="/img/features/feature-1.png"
+                alt="Smart Modular Building"
+                class="feat_card-img"
+              />
+            </picture>
           </div>
           <figcaption class="feat_card-content">
-            <h3 class="feat_card-title">The Ground Actually Feels Different</h3>
+            <h3 class="feat_card-title">Smart Modular Building</h3>
             <p class="feat_card-text">
-              Each surface — dry clay, packed silt, soft chalk — changes how the
-              grain moves and settles. Learning to listen to the terrain is the
-              whole game.
+              The pieces have this satisfying snap when they connect. Spin 'em
+              around, flip 'em - you'll know pretty quick if your design's gonna
+              work.
             </p>
           </figcaption>
         </figure>
 
-        <figure class="feat_card" data-hiw-slide>
+        <!-- Карточка 2 -->
+        <figure class="feat_card">
           <div class="feat_card-icon-wrap">
-            <svg class="feat_card-icon">
-              <use href="/sprite.svg#icon-feature2"></use>
-            </svg>
+            <picture>
+              <source
+                srcset="
+                  /img/features/feature2.png    1x,
+                  /img/features/feature2@2x.png 2x
+                "
+              />
+              <img
+                src="/img/features/feature2.png"
+                alt="Physics-Powered Patterns"
+                class="feat_card-img"
+              />
+            </picture>
           </div>
           <figcaption class="feat_card-content">
-            <h3 class="feat_card-title">No Timers. No Penalties.</h3>
+            <h3 class="feat_card-title">Physics-Powered Patterns</h3>
             <p class="feat_card-text">
-              Quiet Grain never rushes you. You can set it down mid-puzzle and
-              it waits, exactly as you left it — the grain still resting in its
-              last position.
+              Once you build something, it actually moves! Gears start spinning,
+              dominoes topple over, and light beams set off the next part of
+              your contraption.
             </p>
           </figcaption>
         </figure>
 
-        <figure class="feat_card" data-hiw-slide>
+        <!-- Карточка 3 -->
+        <figure class="feat_card">
           <div class="feat_card-icon-wrap">
-            <svg class="feat_card-icon">
-              <use href="/sprite.svg#icon-feature3"></use>
-            </svg>
+            <picture>
+              <source
+                srcset="
+                  /img/features/feature3.png    1x,
+                  /img/features/feature3@2x.png 2x
+                "
+              />
+              <img
+                src="/img/features/feature3.png"
+                alt="Creative Challenges"
+                class="feat_card-img"
+              />
+            </picture>
           </div>
           <figcaption class="feat_card-content">
-            <h3 class="feat_card-title">A Living Atlas</h3>
+            <h3 class="feat_card-title">Creative <br />Challenges</h3>
             <p class="feat_card-text">
-              There are over 80 levels, and they get weirder and more beautiful
-              the deeper you go. Some feel geological. Others feel almost
-              architectural.
+              You can either tackle the puzzle challenges or just mess around in
+              free-build mode making whatever crazy patterns you want.
             </p>
           </figcaption>
         </figure>
 
-        <figure class="feat_card" data-hiw-slide>
+        <!-- Карточка 4 -->
+        <figure class="feat_card">
           <div class="feat_card-icon-wrap">
-            <svg class="feat_card-icon">
-              <use href="/sprite.svg#icon-feature4"></use>
-            </svg>
+            <picture>
+              <source
+                srcset="
+                  /img/features/feature4.png    1x,
+                  /img/features/feature4@2x.png 2x
+                "
+              />
+              <img
+                src="/img/features/feature4.png"
+                alt="Progressive Tool Unlock"
+                class="feat_card-img"
+              />
+            </picture>
           </div>
           <figcaption class="feat_card-content">
-            <h3 class="feat_card-title">The Trace Archive</h3>
+            <h3 class="feat_card-title">Progressive Tool Unlock</h3>
             <p class="feat_card-text">
-              Each puzzle you solve adds a piece to an image that is unique to
-              you. No two archives are alike. Complete the atlas to see what
-              your grain has drawn.
+              Earn new modules like magnetic connectors, bouncy springs, and
+              color-reactive tiles as you master each level.
             </p>
           </figcaption>
         </figure>
       </div>
     </div>
-
-    <div class="feat_controls" aria-label="Slider navigation">
-      <button
-        type="button"
-        class="feat_ctrl-btn"
-        data-hiw-prev
-        aria-label="Previous slide"
-      >
-        <svg class="feat_ctrl-icon">
-          <use href="/sprite.svg#arow-back"></use>
-        </svg>
-      </button>
-
-      <div class="feat_dots" aria-label="Slides">
-        <button
-          type="button"
-          class="feat_dot active"
-          data-hiw-dot
-          data-slide="0"
-          aria-label="Go to slide 1"
-        ></button>
-        <button
-          type="button"
-          class="feat_dot"
-          data-hiw-dot
-          data-slide="1"
-          aria-label="Go to slide 2"
-        ></button>
-        <button
-          type="button"
-          class="feat_dot"
-          data-hiw-dot
-          data-slide="2"
-          aria-label="Go to slide 3"
-        ></button>
-        <button
-          type="button"
-          class="feat_dot"
-          data-hiw-dot
-          data-slide="3"
-          aria-label="Go to slide 4"
-        ></button>
-      </div>
-
-      <button
-        type="button"
-        class="feat_ctrl-btn"
-        data-hiw-next
-        aria-label="Next slide"
-      >
-        <svg class="feat_ctrl-icon">
-          <use href="/sprite.svg#arow-forward"></use>
-        </svg>
-      </button>
-    </div> -->
   </div>
 </article>

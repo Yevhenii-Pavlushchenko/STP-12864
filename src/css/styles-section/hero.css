@@ -47,6 +47,7 @@
   align-items: center;
 
   @media only screen and (min-width: 1440px) {
+    padding-left: 88px;
     width: 50%;
     justify-content: flex-start;
   }

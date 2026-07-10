@@ -1,0 +1,132 @@
+
+
+.rev_section {
+  background-color: var(--background-color, #041224);
+  padding: 40px 0;
+  width: 100%;
+}
+
+.rev_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.rev_section-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  width: fit-content;
+  background: linear-gradient(25deg, #00d4ff 0%, #ff4f8a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rev_slider-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.rev_slider-track {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 20px !important;
+  overflow-x: auto !important;
+  scroll-snap-type: x mandatory !important;
+  scrollbar-width: none;
+  padding-bottom: 10px;
+}
+
+.rev_slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.rev_card {
+  margin: 0;
+  flex: 0 0 310px !important;
+  width: 310px !important;
+  height: 304px !important;
+  scroll-snap-align: start !important;
+  box-sizing: border-box;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background:
+    linear-gradient(var(--background-color, #041224), var(--background-color, #041224)) padding-box,
+    linear-gradient(25deg, var(--main-color, #00e5ff) 0%, var(--accent-color, #ff4f8a) 100%) border-box;
+}
+
+.rev_card-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rev_card-avatar-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.rev_card-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rev_card-username {
+  font-family: var(--font-space, "Space Grotesk", sans-serif);
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--main-color, #00e5ff);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.rev_card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.rev_card-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-color, #ffffff);
+  margin: 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  .rev_section {
+    padding: 75px 0;
+  }
+
+  .rev_section-title {
+    margin-bottom: 28px;
+  }
+
+  .rev_slider-track {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+    overflow-x: visible !important;
+    scroll-snap-type: none !important;
+    padding-bottom: 0;
+  }
+
+  .rev_card {
+    flex: none !important;
+    width: 100% !important;
+    max-width: 413.33px !important;
+    height: 266px !important;
+  }
+}
