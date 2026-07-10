@@ -18,7 +18,7 @@
     />
 
     <script type="module" crossorigin src="./index.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/styles-diRZ8QHD.css">
+    <link rel="stylesheet" crossorigin href="./assets/styles-nd6qrPd6.css">
   </head>
   <body data-scroll="true">
     <header class="hdr_header">
@@ -94,140 +94,364 @@
   <div class="container feat_wrapper">
     <h2 class="feat_section-title">Features</h2>
 
-    <!-- <div class="feat_slider-viewport">
-      <div class="feat_slider-track" data-hiw-track>
-        <figure class="feat_card" data-hiw-slide>
+    <div class="feat_slider-viewport">
+      <div class="feat_slider-track">
+        <!-- Карточка 1 -->
+        <figure class="feat_card">
           <div class="feat_card-icon-wrap">
-            <svg class="feat_card-icon">
-              <use href="/sprite.svg#icon-feature1"></use>
-            </svg>
+            <picture>
+              <source
+                srcset="img/features/feature1.png 1x, img/features/feature1@2x.png 2x"
+              />
+              <img
+                src="/img/features/feature-1.png"
+                alt="Smart Modular Building"
+                class="feat_card-img"
+              />
+            </picture>
           </div>
           <figcaption class="feat_card-content">
-            <h3 class="feat_card-title">The Ground Actually Feels Different</h3>
+            <h3 class="feat_card-title">Smart Modular Building</h3>
             <p class="feat_card-text">
-              Each surface — dry clay, packed silt, soft chalk — changes how the
-              grain moves and settles. Learning to listen to the terrain is the
-              whole game.
+              The pieces have this satisfying snap when they connect. Spin 'em
+              around, flip 'em - you'll know pretty quick if your design's gonna
+              work.
             </p>
           </figcaption>
         </figure>
 
-        <figure class="feat_card" data-hiw-slide>
+        <!-- Карточка 2 -->
+        <figure class="feat_card">
           <div class="feat_card-icon-wrap">
-            <svg class="feat_card-icon">
-              <use href="/sprite.svg#icon-feature2"></use>
-            </svg>
+            <picture>
+              <source
+                srcset="img/features/feature2.png 1x, img/features/feature2@2x.png 2x"
+              />
+              <img
+                src="./img/features/feature2.png"
+                alt="Physics-Powered Patterns"
+                class="feat_card-img"
+              />
+            </picture>
           </div>
           <figcaption class="feat_card-content">
-            <h3 class="feat_card-title">No Timers. No Penalties.</h3>
+            <h3 class="feat_card-title">Physics-Powered Patterns</h3>
             <p class="feat_card-text">
-              Quiet Grain never rushes you. You can set it down mid-puzzle and
-              it waits, exactly as you left it — the grain still resting in its
-              last position.
+              Once you build something, it actually moves! Gears start spinning,
+              dominoes topple over, and light beams set off the next part of
+              your contraption.
             </p>
           </figcaption>
         </figure>
 
-        <figure class="feat_card" data-hiw-slide>
+        <!-- Карточка 3 -->
+        <figure class="feat_card">
           <div class="feat_card-icon-wrap">
-            <svg class="feat_card-icon">
-              <use href="/sprite.svg#icon-feature3"></use>
-            </svg>
+            <picture>
+              <source
+                srcset="img/features/feature3.png 1x, img/features/feature3@2x.png 2x"
+              />
+              <img
+                src="./img/features/feature3.png"
+                alt="Creative Challenges"
+                class="feat_card-img"
+              />
+            </picture>
           </div>
           <figcaption class="feat_card-content">
-            <h3 class="feat_card-title">A Living Atlas</h3>
+            <h3 class="feat_card-title">Creative <br />Challenges</h3>
             <p class="feat_card-text">
-              There are over 80 levels, and they get weirder and more beautiful
-              the deeper you go. Some feel geological. Others feel almost
-              architectural.
+              You can either tackle the puzzle challenges or just mess around in
+              free-build mode making whatever crazy patterns you want.
             </p>
           </figcaption>
         </figure>
 
-        <figure class="feat_card" data-hiw-slide>
+        <!-- Карточка 4 -->
+        <figure class="feat_card">
           <div class="feat_card-icon-wrap">
-            <svg class="feat_card-icon">
-              <use href="/sprite.svg#icon-feature4"></use>
-            </svg>
+            <picture>
+              <source
+                srcset="img/features/feature4.png 1x, img/features/feature4@2x.png 2x"
+              />
+              <img
+                src="./img/features/feature4.png"
+                alt="Progressive Tool Unlock"
+                class="feat_card-img"
+              />
+            </picture>
           </div>
           <figcaption class="feat_card-content">
-            <h3 class="feat_card-title">The Trace Archive</h3>
+            <h3 class="feat_card-title">Progressive Tool Unlock</h3>
             <p class="feat_card-text">
-              Each puzzle you solve adds a piece to an image that is unique to
-              you. No two archives are alike. Complete the atlas to see what
-              your grain has drawn.
+              Earn new modules like magnetic connectors, bouncy springs, and
+              color-reactive tiles as you master each level.
             </p>
           </figcaption>
         </figure>
       </div>
     </div>
-
-    <div class="feat_controls" aria-label="Slider navigation">
-      <button
-        type="button"
-        class="feat_ctrl-btn"
-        data-hiw-prev
-        aria-label="Previous slide"
-      >
-        <svg class="feat_ctrl-icon">
-          <use href="/sprite.svg#arow-back"></use>
-        </svg>
-      </button>
-
-      <div class="feat_dots" aria-label="Slides">
-        <button
-          type="button"
-          class="feat_dot active"
-          data-hiw-dot
-          data-slide="0"
-          aria-label="Go to slide 1"
-        ></button>
-        <button
-          type="button"
-          class="feat_dot"
-          data-hiw-dot
-          data-slide="1"
-          aria-label="Go to slide 2"
-        ></button>
-        <button
-          type="button"
-          class="feat_dot"
-          data-hiw-dot
-          data-slide="2"
-          aria-label="Go to slide 3"
-        ></button>
-        <button
-          type="button"
-          class="feat_dot"
-          data-hiw-dot
-          data-slide="3"
-          aria-label="Go to slide 4"
-        ></button>
-      </div>
-
-      <button
-        type="button"
-        class="feat_ctrl-btn"
-        data-hiw-next
-        aria-label="Next slide"
-      >
-        <svg class="feat_ctrl-icon">
-          <use href="/sprite.svg#arow-forward"></use>
-        </svg>
-      </button>
-    </div> -->
   </div>
 </article>
 
-      <article id="how-it-works" class="hiw_section">
-  <div class="container hiw_wrapper">
-    <h2 class="hiw_section-title">How It Works</h2>
+      <article id="how-it-works" class="how_section">
+  <div class="container how_wrapper">
+    <h2 class="how_section-title">How it works</h2>
 
+    <div class="how_timeline">
+      <!-- Центральная линия таймлайна -->
+      <div class="how_timeline-line"></div>
+
+      <!-- Шаг 1 -->
+      <div class="how_step how_step-1">
+        <div class="how_step-dot"></div>
+        <div class="how_step-block">
+          <div class="how_step-img-wrap">
+            <picture>
+              <source
+                srcset="img/how-it-works/how1.png 1x, img/how-it-works/how1@2x.png 2x"
+              />
+              <img
+                src="./img/how-it-works/how1.png"
+                alt="Plan Your Structure"
+                class="how_step-img"
+              />
+            </picture>
+          </div>
+          <div class="how_step-content">
+            <h3 class="how_step-title">Plan Your Structure</h3>
+            <p class="how_step-text">
+              Choose modules from your toolkit and sketch the perfect pattern on
+              the grid.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Шаг 2 -->
+      <div class="how_step how_step-2">
+        <div class="how_step-dot"></div>
+        <div class="how_step-block">
+          <div class="how_step-img-wrap">
+            <picture>
+              <source
+                srcset="img/how-it-works/how2.png 1x, img/how-it-works/how2@2x.png 2x"
+              />
+              <img
+                src="./img/how-it-works/how2.png"
+                alt="Construct & Connect"
+                class="how_step-img"
+              />
+            </picture>
+          </div>
+          <div class="how_step-content">
+            <h3 class="how_step-title">Construct & Connect</h3>
+            <p class="how_step-text">
+              Smooth drag-and-drop lets you build, connect, and verify
+              structural stability as you go.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Шаг 3 -->
+      <div class="how_step how_step-3">
+        <div class="how_step-dot"></div>
+        <div class="how_step-block">
+          <div class="how_step-img-wrap">
+            <picture>
+              <source
+                srcset="img/how-it-works/how3.png 1x, img/how-it-works/how3@2x.png 2x"
+              />
+              <img
+                src="./img/how-it-works/how3.png"
+                alt="Trigger the Magic"
+                class="how_step-img"
+              />
+            </picture>
+          </div>
+          <div class="how_step-content">
+            <h3 class="how_step-title">Trigger the Magic</h3>
+            <p class="how_step-text">
+              Activate your creation and watch beautiful chain reactions unfold.
+              Refine until it's flawless.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </article>
 
-      <article id="about" class="abt_about">
-  <div class="container abt_about-wrapper">
-    <h2 class="abt_about-title">About</h2>
+      <article id="reviews" class="rev_section">
+  <div class="container rev_wrapper">
+    <h2 class="rev_section-title">Reviews</h2>
+
+    <!-- Вьюпорт скрывает вылезающие карточки на мобилке -->
+    <div class="rev_slider-viewport">
+      <!-- Трек выстраивает их в линию на мобилке и в сетку на десктопе -->
+      <div class="rev_slider-track">
+        <!-- Карточка 1: Diego Morales -->
+        <figure class="rev_card">
+          <div class="rev_card-user">
+            <div class="rev_card-avatar-wrap">
+              <picture>
+                <source
+                  srcset="img/reviews/author1.png 1x, img/reviews/author1@2x.png 2x"
+                />
+                <img
+                  src="./img/reviews/author1.png"
+                  alt="Diego Morales"
+                  class="rev_card-avatar"
+                />
+              </picture>
+            </div>
+            <h3 class="rev_card-username">Diego Morales:</h3>
+          </div>
+          <div class="rev_card-content">
+            <p class="rev_card-text">
+              "Honestly the best building game I've found on my phone. The
+              physics are spot-on, and when everything lights up and starts
+              going... man, it's like watching magic happen."
+            </p>
+          </div>
+        </figure>
+
+        <!-- Карточка 2: Aisha Khan -->
+        <figure class="rev_card">
+          <div class="rev_card-user">
+            <div class="rev_card-avatar-wrap">
+              <picture>
+                <source
+                  srcset="img/reviews/author2.png 1x, img/reviews/author2@2x.png 2x"
+                />
+                <img
+                  src="./img/reviews/author2.png"
+                  alt="Aisha Khan"
+                  class="rev_card-avatar"
+                />
+              </picture>
+            </div>
+            <h3 class="rev_card-username">Aisha Khan:</h3>
+          </div>
+          <div class="rev_card-content">
+            <p class="rev_card-text">
+              "Hours disappear while building. Love how you can either solve
+              puzzles or just build whatever you want. Every time you unlock
+              something new, it's like Christmas morning - suddenly you've got
+              all these new possibilities."
+            </p>
+          </div>
+        </figure>
+
+        <!-- Карточка 3: Liam Dubois -->
+        <figure class="rev_card">
+          <div class="rev_card-user">
+            <div class="rev_card-avatar-wrap">
+              <picture>
+                <source
+                  srcset="img/reviews/author3.png 1x, img/reviews/author3@2x.png 2x"
+                />
+                <img
+                  src="./img/reviews/author3.png"
+                  alt="Liam Dubois"
+                  class="rev_card-avatar"
+                />
+              </picture>
+            </div>
+            <h3 class="rev_card-username">Liam Dubois:</h3>
+          </div>
+          <div class="rev_card-content">
+            <p class="rev_card-text">
+              "Beautiful and brainy. It's really pretty to look at, and you
+              actually have to think through how things will work - kind of like
+              being an engineer. My new favorite chill-yet-challenging game."
+            </p>
+          </div>
+        </figure>
+
+        <!-- Карточка 4: Noah Bennett -->
+        <figure class="rev_card">
+          <div class="rev_card-user">
+            <div class="rev_card-avatar-wrap">
+              <picture>
+                <source
+                  srcset="img/reviews/author4.png 1x, img/reviews/author4@2x.png 2x"
+                />
+                <img
+                  src="./img/reviews/author4.png"
+                  alt="Noah Bennett"
+                  class="rev_card-avatar"
+                />
+              </picture>
+            </div>
+            <h3 class="rev_card-username">Noah Bennett:</h3>
+          </div>
+          <div class="rev_card-content">
+            <p class="rev_card-text">
+              "Every level feels like a clever invention. I keep telling myself
+              I'll finish one puzzle, then suddenly I'm building another
+              ridiculous machine. Watching every chain reaction work exactly as
+              planned is incredibly satisfying."
+            </p>
+          </div>
+        </figure>
+
+        <!-- Карточка 5: Sofia Laurent -->
+        <figure class="rev_card">
+          <div class="rev_card-user">
+            <div class="rev_card-avatar-wrap">
+              <picture>
+                <source
+                  srcset="img/reviews/author5.png 1x, img/reviews/author5@2x.png 2x"
+                />
+                <img
+                  src="./img/reviews/author5.png"
+                  alt="Sofia Laurent"
+                  class="rev_card-avatar"
+                />
+              </picture>
+            </div>
+            <h3 class="rev_card-username">Sofia Laurent:</h3>
+          </div>
+          <div class="rev_card-content">
+            <p class="rev_card-text">
+              "Perfect balance between creativity and logic. Nothing feels
+              random here. Every module has a purpose, and experimenting with
+              new combinations always rewards careful thinking without becoming
+              frustrating or overwhelming."
+            </p>
+          </div>
+        </figure>
+
+        <!-- Карточка 6: Ethan Walker -->
+        <figure class="rev_card">
+          <div class="rev_card-user">
+            <div class="rev_card-avatar-wrap">
+              <picture>
+                <source
+                  srcset="img/reviews/author6.png 1x, img/reviews/author6@2x.png 2x"
+                />
+                <img
+                  src="./img/reviews/author6.png"
+                  alt="Ethan Walker"
+                  class="rev_card-avatar"
+                />
+              </picture>
+            </div>
+            <h3 class="rev_card-username">Ethan Walker:</h3>
+          </div>
+          <div class="rev_card-content">
+            <p class="rev_card-text">
+              "The building system is ridiculously satisfying. Connecting
+              pieces, testing ideas, making small adjustments, then finally
+              watching the whole mechanism come alive never gets old. It's
+              relaxing and surprisingly addictive."
+            </p>
+          </div>
+        </figure>
+      </div>
+    </div>
   </div>
 </article>
 
