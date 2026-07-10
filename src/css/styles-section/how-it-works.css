@@ -1,6 +1,3 @@
-/* ==========================================================================
-   1. МОБИЛЬНАЯ ВЕРСИЯ (Вертикальный таймлайн, линия слева)
-   ========================================================================== */
 
 .how_section {
   background-color: var(--background-color, #041224);
@@ -33,10 +30,9 @@
   flex-direction: column;
   gap: 40px;
   padding-left: 30px;
-  /* Отступ под вертикальную линию */
+
 }
 
-/* Вертикальная белая линия */
 .how_timeline-line {
   position: absolute;
   left: 6px;
@@ -52,7 +48,7 @@
   flex-direction: column;
 }
 
-/* Белая точка на линии */
+
 .how_step-dot {
   position: absolute;
   left: -28px;
@@ -62,7 +58,6 @@
   background-color: #ffffff;
   border-radius: 50%;
   transform: translateX(-3px);
-  /* Центрируем по линии */
   z-index: 2;
 }
 .how_step-2 .how_step-dot,
@@ -79,7 +74,6 @@
   gap: 16px;
 }
 
-/* Иконки строго 106x106 как в макете */
 .how_step-img-wrap {
   width: 106px;
   height: 106px;
@@ -115,9 +109,6 @@
   margin: 0;
 }
 
-/* ==========================================================================
-   2. ДЕСКТОПНАЯ ВЕРСИЯ (Горизонтальный таймлайн, шахматный порядок)
-   ========================================================================== */
 
 @media only screen and (min-width: 1440px) {
   .how_section {
@@ -128,24 +119,20 @@
     margin-bottom: 60px;
   }
 
-  /* Перестраиваем в горизонтальный ряд */
   .how_timeline {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px;
     padding-left: 0;
     padding-top: 180px;
-    /* Место сверху для 2-го шага */
     padding-bottom: 180px;
-    /* Балансируем отступы секции */
+
   }
 
-  /* Поворачиваем линию горизонтально */
   .how_timeline-line {
     left: 0;
     right: 0;
     top: 140px;
-    /* Позиция строго по центру между блоками */
     width: 100%;
     height: 2px;
   }
@@ -155,13 +142,11 @@
     position: relative;
   }
 
-  /* Точка встает ровно на горизонтальную линию */
   .how_step-dot {
     width: 28px;
     height: 28px;
     left: 50%;
     top: -40px;
-    /* Выравниваем по линии */
     transform: translate(-50%, -50%);
   }
 
@@ -174,13 +159,11 @@
     align-items: flex-start;
   }
 
-  /* Магия макета: 1 и 3 шаги опускаем под линию */
   .how_step-1 .how_step-block,
   .how_step-3 .how_step-block {
     top: -12px;
   }
 
-  /* 2 шаг поднимаем над линией */
   .how_step-2 .how_step-block {
     bottom: 68px;
 
