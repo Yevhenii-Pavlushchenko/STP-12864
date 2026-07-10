@@ -5,7 +5,7 @@
   --background-color: #061b30;
   --text-color: #eaf2ff;
   --main-color: #00d4ff;
-  --accent-color: #FF4F8A
+  --accent-color: #FF4F8A;
 
 
   font-synthesis: none;
@@ -28,7 +28,7 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  padding-top: 79px;
+  /* padding-top: 79px; */
   font-family: var(--font-manrope);
   background-color: var(--background-color);
   color: var(--text-color);

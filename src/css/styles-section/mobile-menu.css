@@ -47,13 +47,19 @@
   border: none;
   margin-left: auto;
   outline: none;
-  transition: stroke 300ms ease-in;
-  stroke: var(--text-color);
+
+  color: var(--main-color);
+  transition: color 300ms ease-in;
+
+  svg {
+    stroke: currentColor;
+    fill: none;
+  }
 
   &:hover,
   &:focus-visible,
   &:active {
-    stroke: var(--bronze-color);
+    color:#FF4F8A;
   }
 }
 
@@ -75,12 +81,14 @@
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
   transition: color 0.3s ease;
+  color: var(--main-color);
 
   &:hover,
   &:focus-visible,
   &:active {
-    color: var(--bronze-color);
+    color: var(--accent-color);
   }
 }
 
