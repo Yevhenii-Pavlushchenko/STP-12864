@@ -1,13 +1,11 @@
 :root {
-  --font-cormorant: 'Cormorant', serif;
-  --font-inter: 'Inter', sans-serif;
+  --font-manrope: "Manrope",sans-serif;
+  --font-space: "Space Grotesk", sans-serif;
 
-  --background-color: #F5EFEB;
-  --text-color: #7a5c44;
-  --black-color: #2d1a0e;
-  --faq-text-color: #3e2f1c;
-  --white-color: #ffffff;
-  --bronze-color: #c4956a;
+  --background-color: #061b30;
+  --text-color: #eaf2ff;
+  --main-color: #00d4ff;
+  --accent-color: #FF4F8A
 
 
   font-synthesis: none;
@@ -31,7 +29,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding-top: 79px;
-  font-family: var(--font-inter);
+  font-family: var(--font-manrope);
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -60,7 +58,7 @@ h1,
 h2,
 a,
 li {
-  font-family: var(--font-cormorant);
+  font-family: var(--font-space);
 }
 
 .visually-hidden {

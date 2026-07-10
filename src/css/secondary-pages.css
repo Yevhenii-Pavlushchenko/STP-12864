@@ -30,7 +30,7 @@
   transition: color 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    color: var(--bronze-color);
+    color: var(--accent-color);
     transform: scale(1.1);
   }
 
