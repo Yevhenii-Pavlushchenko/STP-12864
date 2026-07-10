@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construct Pattern</title>
+    <meta
+      name="description"
+      content="Build, balance, and achieve in Construct Pattern! A physics-powered modular puzzle game with creative challenges and progressive tools. Start constructing now!"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" crossorigin src="./index.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/styles-Btnx9TUB.css">
+  </head>
+  <body data-scroll="true">
+    <header class="hdr_header">
+  <div class="container">
+    <a href="./" class="hdr_logo-link">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="img/logo.png 1x, img/logo@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          srcset="img/logo-mobile.png 1x, img/logo-mobile@2x.png 2x"
+          type="image/png"
+        />
+        <img
+          class="hdr_logo-img"
+          src="./img/logo-mobile.png"
+          alt="Maze Classic Logo"
+          width="48"
+          height="41"
+        />
+      </picture>
+    </a>
+    <button class="hdr_btn-burger" type="button" data-menu-open>
+      <svg class="hdr_btn-burger-icon">
+        <use href="./sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <nav class="hdr_navigation">
+      <ul class="hdr_list-navigation">
+        <li class="hdr_item-navigation">
+          <a href="#" class="hdr_item-nav-link">Home</a>
+        </li>
+        <li class="hdr_item-navigation">
+          <a href="#about" class="hdr_item-nav-link">About</a>
+        </li>
+        <li class="hdr_item-navigation">
+          <a href="#how-it-works" class="hdr_item-nav-link">How it Works</a>
+        </li>
+        <li class="hdr_item-navigation">
+          <a href="#features" class="hdr_item-nav-link">Features</a>
+        </li>
+        <li class="hdr_item-navigation">
+          <a href="#faq" class="hdr_item-nav-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+      <article class="hr_hero">
+  <div class="hr_hero-wrapper">
+    <div class="hr_hero-title-wrapper">
+      <h1 class="hr_hero-title">
+        Follow one tiny grain as it finds its way home.
+      </h1>
+
+  </div>
+</article>
+
+      <article id="features" class="feat_section">
+  <div class="container feat_wrapper">
+    <h2 class="feat_section-title">Features</h2>
+
+    <!-- <div class="feat_slider-viewport">
+      <div class="feat_slider-track" data-hiw-track>
+        <figure class="feat_card" data-hiw-slide>
+          <div class="feat_card-icon-wrap">
+            <svg class="feat_card-icon">
+              <use href="/sprite.svg#icon-feature1"></use>
+            </svg>
+          </div>
+          <figcaption class="feat_card-content">
+            <h3 class="feat_card-title">The Ground Actually Feels Different</h3>
+            <p class="feat_card-text">
+              Each surface — dry clay, packed silt, soft chalk — changes how the
+              grain moves and settles. Learning to listen to the terrain is the
+              whole game.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="feat_card" data-hiw-slide>
+          <div class="feat_card-icon-wrap">
+            <svg class="feat_card-icon">
+              <use href="/sprite.svg#icon-feature2"></use>
+            </svg>
+          </div>
+          <figcaption class="feat_card-content">
+            <h3 class="feat_card-title">No Timers. No Penalties.</h3>
+            <p class="feat_card-text">
+              Quiet Grain never rushes you. You can set it down mid-puzzle and
+              it waits, exactly as you left it — the grain still resting in its
+              last position.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="feat_card" data-hiw-slide>
+          <div class="feat_card-icon-wrap">
+            <svg class="feat_card-icon">
+              <use href="/sprite.svg#icon-feature3"></use>
+            </svg>
+          </div>
+          <figcaption class="feat_card-content">
+            <h3 class="feat_card-title">A Living Atlas</h3>
+            <p class="feat_card-text">
+              There are over 80 levels, and they get weirder and more beautiful
+              the deeper you go. Some feel geological. Others feel almost
+              architectural.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="feat_card" data-hiw-slide>
+          <div class="feat_card-icon-wrap">
+            <svg class="feat_card-icon">
+              <use href="/sprite.svg#icon-feature4"></use>
+            </svg>
+          </div>
+          <figcaption class="feat_card-content">
+            <h3 class="feat_card-title">The Trace Archive</h3>
+            <p class="feat_card-text">
+              Each puzzle you solve adds a piece to an image that is unique to
+              you. No two archives are alike. Complete the atlas to see what
+              your grain has drawn.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="feat_controls" aria-label="Slider navigation">
+      <button
+        type="button"
+        class="feat_ctrl-btn"
+        data-hiw-prev
+        aria-label="Previous slide"
+      >
+        <svg class="feat_ctrl-icon">
+          <use href="/sprite.svg#arow-back"></use>
+        </svg>
+      </button>
+
+      <div class="feat_dots" aria-label="Slides">
+        <button
+          type="button"
+          class="feat_dot active"
+          data-hiw-dot
+          data-slide="0"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          type="button"
+          class="feat_dot"
+          data-hiw-dot
+          data-slide="1"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          type="button"
+          class="feat_dot"
+          data-hiw-dot
+          data-slide="2"
+          aria-label="Go to slide 3"
+        ></button>
+        <button
+          type="button"
+          class="feat_dot"
+          data-hiw-dot
+          data-slide="3"
+          aria-label="Go to slide 4"
+        ></button>
+      </div>
+
+      <button
+        type="button"
+        class="feat_ctrl-btn"
+        data-hiw-next
+        aria-label="Next slide"
+      >
+        <svg class="feat_ctrl-icon">
+          <use href="/sprite.svg#arow-forward"></use>
+        </svg>
+      </button>
+    </div> -->
+  </div>
+</article>
+
+      <article id="how-it-works" class="hiw_section">
+  <div class="container hiw_wrapper">
+    <h2 class="hiw_section-title">How It Works</h2>
+
+</article>
+
+      <article id="about" class="abt_about">
+  <div class="container abt_about-wrapper">
+    <h2 class="abt_about-title">About</h2>
+  </div>
+</article>
+
+      <article id="faq" class="faq_section">
+  <div class="container faq_wrapper">
+    <h2 class="faq_section-title">FAQ</h2>
+  </div>
+</article>
+
+    </main>
+
+    <footer class="ftr_footer">
+  <div class="container ftr_footer-wrapper">
+    <span style="display: none">Generated: 2025-04-07, Hash: k39fd7x</span>
+
+    <ul class="ftr_footer-list">
+      <li class="ftr_footer-item">
+        <a class="ftr_footer-link" href="./privacy-policy.html"
+          >Privacy Policy</a
+        >
+      </li>
+      <li class="ftr_footer-item">
+        <a class="ftr_footer-link" href="./terms-conditions.html"
+          >Terms & Conditions</a
+        >
+      </li>
+    </ul>
+
+    <p class="ftr_footer-copyright">
+      <span class="ftr_footer-copy-main">
+        © 2026 Quiet Grain | All Rights Reserved | quietgrain.online</span
+      >
+    </p>
+  </div>
+</footer>
+
+
+    <div class="mm_mobile-menu" data-visible="close">
+  <div class="container">
+    <button class="mm_close-btn" type="button" data-menu-close>
+      <svg class="mm_btn-close-icon">
+        <use href="./sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="mm_list-navigation" data-menu-navigation>
+      <li class="mm_item-navigation">
+        <a href="#about" class="mm_item-nav-link">About</a>
+      </li>
+      <li class="mm_item-navigation">
+        <a href="#how-it-works" class="mm_item-nav-link">How it Works</a>
+      </li>
+      <li class="mm_item-navigation">
+        <a href="#features" class="mm_item-nav-link">Features</a>
+      </li>
+      <li class="mm_item-navigation">
+        <a href="#faq" class="mm_item-nav-link">FAQ</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </body>
+</html>
