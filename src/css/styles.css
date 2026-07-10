@@ -1,0 +1,21 @@
+
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./swiper-bundle.min.css');
+
+
+/* Sections style */
+@import url('./styles-section/header.css');
+@import url('./styles-section/hero.css');
+@import url('./styles-section/about.css');
+@import url('./styles-section/how-it-works.css');
+@import url('./styles-section/features.css');
+@import url('./styles-section/faq.css');
+@import url('./styles-section/footer.css');
+@import url('./styles-section/mobile-menu.css');
+
+/* Secondary Page style */
+@import url('./secondary-pages.css');
+

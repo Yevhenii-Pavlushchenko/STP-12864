@@ -1,0 +1,88 @@
+:root {
+  --font-cormorant: 'Cormorant', serif;
+  --font-inter: 'Inter', sans-serif;
+
+  --background-color: #F5EFEB;
+  --text-color: #7a5c44;
+  --black-color: #2d1a0e;
+  --faq-text-color: #3e2f1c;
+  --white-color: #ffffff;
+  --bronze-color: #c4956a;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 79px;
+  font-family: var(--font-inter);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+body[data-scroll='false'] {
+  overflow: hidden;
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+main {
+  flex-grow: 1;
+}
+
+article {
+  padding: 25px 0;
+  @media only screen and (min-width: 1440px) {
+    padding: 50px 0;
+  }
+}
+
+
+h1,
+h2,
+a,
+li {
+  font-family: var(--font-cormorant);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    scroll-padding-top: 50px;
+  }
+}

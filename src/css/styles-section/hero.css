@@ -1,0 +1,117 @@
+.hr_hero {
+  padding: 50px 0 0 0;
+
+  @media only screen and (min-width: 1440px) {
+        padding: 90px 0 52px 0;
+
+    }
+
+}
+.hr_hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 375px;
+  margin: 0 auto;
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-wrapper {
+    max-width: 1440px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hr_hero-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-title-wrapper {
+    max-width: 567px;
+    padding: 82px 0 0 108px;
+  }
+}
+
+.hr_hero-title {
+  font-family: var(--font-cormorant);
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-title {
+    font-size: 72px;
+    margin-bottom: 50px;
+  }
+}
+
+.hr_hero-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-subtitle {
+    font-size: 20px;
+
+  }
+}
+
+
+
+.hr_hero-btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  background-color: var(--bronze-color);
+  color: var(--white-color);
+  font-size: 20px;
+  padding: 16px 28px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hr_hero-btn:hover {
+  background-color: var(--text-color);
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-btn {
+    width: 375px;
+    align-self: flex-start;
+      font-size: 24px;
+  }
+}
+
+.hr_hero-img-wrapper {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-img-wrapper {
+    max-width: 738px;
+    margin: 0;
+  }
+}
+
+.hr_hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

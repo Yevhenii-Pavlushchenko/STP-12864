@@ -1,0 +1,131 @@
+
+.faq_section {
+  padding: 25px 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq_section {
+    padding: 50px 0;
+  }
+}
+
+.faq_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq_section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq_section-title {
+    font-size: 72px;
+    margin-bottom: 50px;
+  }
+}
+
+.faq_accordion-list {
+  width: 100%;
+  max-width: 332px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq_accordion-list {
+    max-width: 760px;
+  }
+}
+
+.faq_item {
+  width: 100%;
+  background-color: rgba(212, 196, 168, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(62, 47, 28, 0.04),
+   0 2px 18px 0 rgba(62, 47, 28, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.faq_trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 15px 36px;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq_trigger {
+    padding: 30px 36px;
+  }
+}
+
+.faq_question {
+  font-family: var(--font-cormorant);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--faq-text-color);
+  line-height: 1.9;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq_question {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+}
+
+.faq_icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  stroke: var(--bronze-color);
+  fill: none;
+  transition: transform 0.3s ease;
+}
+
+.faq_panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq_panel-content {
+  padding: 0px 36px 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq_panel-content {
+    padding: 0 36px 30px;
+  }
+}
+
+.faq_panel-content p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--faq-text-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .faq_panel-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.faq_item.active .faq_icon {
+  transform: rotate(90deg);
+}
