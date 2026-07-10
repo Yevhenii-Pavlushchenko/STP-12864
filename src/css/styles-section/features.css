@@ -60,8 +60,8 @@
 
 .feat_card {
   margin: 0;
-  flex: 0 0 305px;
-  width: 305px;
+  flex: 0 0 310px;
+  width: 310px;
   height: 375px;
   scroll-snap-align: start;
   box-sizing: border-box;
