@@ -1,0 +1,177 @@
+/* ==========================================================================
+   1. МОБИЛЬНАЯ ВЕРСИЯ (По умолчанию)
+   ========================================================================== */
+
+.faq_section {
+  background-color: var(--background-color);
+  padding: 40px 0;
+  width: 100%;
+}
+
+.faq_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq_section-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  width: fit-content;
+  background: linear-gradient(25deg, #00d4ff 0%, #ff4f8a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.faq_image-bg {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.faq_cube-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.faq_accordion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq_item {
+  font-style:var(--font-monrope);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  background-color: #061b30;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 8px;
+}
+
+.faq_summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq_summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq_question {
+  font-family: var(--font-space, "Space Grotesk", sans-serif);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--main-color, #00e5ff);
+}
+
+.faq_icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--main-color, #00e5ff);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.faq_item[open] .faq_icon {
+  fill: var(--accent-color);
+  transform: rotate(180deg);
+}
+
+.faq_content {
+  margin-top: 12px;
+}
+
+.faq_text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  /* color: var(--text-color, #ffffff); */
+  margin: 0;
+}
+/* ==========================================================================
+   2. ДЕСКТОПНАЯ ВЕРСИЯ (от 1440px)
+   ========================================================================== */
+
+@media only screen and (min-width: 1440px) {
+  .faq_section {
+    width: 100%;
+    padding: 0;
+    /* Убираем фон отсюда, чтобы он не тянулся на весь экран */
+    background-image: none !important;
+  }
+
+  .faq_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 748px;
+    /* Жесткая высота всей композиции из Figma */
+    margin: 0 auto;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    display: block;
+
+    /* Переносим фон сюда — теперь он зажат в рамки 1440px */
+    background-image: url('/img/faq/cube-desktop.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+  }
+
+  /* Поддержка Retina-экранов внутри ограниченного контейнера */
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    .faq_wrapper {
+      background-image: url('/img/faq/cube-desktop@2x.png');
+    }
+  }
+
+  .faq_section-title {
+    font-size: 48px;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    margin-bottom: 0;
+  }
+
+  .faq_mobile-image-only {
+    display: none !important;
+  }
+
+  .faq_accordion-list {
+    position: absolute;
+    right: 80px;
+    top: 140px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .faq_item {
+    padding: 24px;
+    background-color: rgba(4, 18, 36, 0.75);
+    backdrop-filter: blur(4px);
+  }
+
+  .faq_question {
+    font-size: 20px;
+  }
+
+  .faq_text {
+    font-size: 16px;
+  }
+}
