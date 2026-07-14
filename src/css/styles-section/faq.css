@@ -103,6 +103,7 @@
     width: 100%;
     padding: 0;
     background-image: none !important;
+    background: #041224 !important;
     margin-bottom: 150px;
   }
 
@@ -112,19 +113,21 @@
     max-width: 1440px;
     height: 748px;
     margin: 0 auto;
-    padding: 60px 80px;
+    /* padding: 60px 0; */
     box-sizing: border-box;
     display: block;
 
     background-image: url('/img/faq/cube-desktop.png');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: center center;
     background-size: cover;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
     .faq_wrapper {
+      background-position: center center;
+        background-size: 100% 100%;
       background-image: url('/img/faq/cube-desktop@2x.png');
     }
   }
